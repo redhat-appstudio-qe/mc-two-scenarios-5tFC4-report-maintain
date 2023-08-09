@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-rhtap-devfile-multi-component-ervu
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/e2e-demos-lrnf-tenant/mc-two-scenarios/devfile-sample-python-basic-rhtap-devfile-multi-component-ervu@sha256:75da053acae351a1954a838523ebc927c7ab3b00e3bc9241575b2b560d9667cb
+        name: my-python
+        resources: {}
+status: {}
